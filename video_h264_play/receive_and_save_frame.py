@@ -145,7 +145,7 @@ class Video():
         self._new_frame = self.gst_to_opencv(sample)
 
         # Display the frame
-        cv2.imshow('frame', frame)
+        cv2.imshow('frame', self._new_frame)
 
         # Check if the 's' key is pressed
         key = cv2.waitKey(1) & 0xFF

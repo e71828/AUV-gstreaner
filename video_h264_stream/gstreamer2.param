@@ -1,0 +1,4 @@
+! h264parse
+! queue
+! rtph264pay config-interval=10 pt=96
+! multiudpsink clients=192.168.31.236:5600,192.168.31.236:4777

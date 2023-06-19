@@ -176,11 +176,7 @@ if __name__ == '__main__':
     print('\nSuccess!\nStarting streaming - press "q" to quit.')
 
     while True:
-        # Wait for the next frame to become available
-        if video.frame_available():
-            # Only retrieve and display a frame if it's new
-            frame = video.frame()
-            cv2.imshow('frame', frame)
-        # Allow frame to display, and check if user wants to quit
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
+
+    cv2.destroyAllWindows()

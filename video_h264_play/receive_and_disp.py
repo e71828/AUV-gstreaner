@@ -2,7 +2,7 @@
 """
 BlueRov video capture class
 """
-
+from datetime import datetime
 import cv2
 import gi
 import numpy as np
@@ -165,3 +165,9 @@ if __name__ == '__main__':
         # Allow frame to display, and check if user wants to quit
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
+        # Save the frame to disk if 's' is pressed
+        if cv2.waitKey(1) & 0xFF == ord('s'):
+            # save pictures, named as datetime timestamp to avoid overwriting in a suborder named "pictures".
+            current_time = datetime.now().strftime('%Y%m%d-%H%M%S')
+            file_name = 'Frame_{}.jpg'.format(current_time)
+            cv2.imwrite(file_name, video.latest_frame)

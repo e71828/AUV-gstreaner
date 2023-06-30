@@ -1,4 +1,4 @@
-# import the require packages.
+#!/bin/python3
 import logging
 
 import cv2
@@ -141,7 +141,7 @@ class MainWindow(QMainWindow):
 
         # Set the central widget.
         self.setCentralWidget(self.widget)
-        self.setMinimumSize(1280, 1440)
+        self.setMinimumSize(640, 720)
         # self.showMaximized()
         self.setStyleSheet("QMainWindow {background: 'black';}")
         # self.setWindowIcon(QIcon(QPixmap("camera_2.png")))

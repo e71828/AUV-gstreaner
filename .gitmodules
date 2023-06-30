@@ -1,3 +1,6 @@
 [submodule "rtsp-server/v4l2rtspserver"]
 	path = rtsp-server/v4l2rtspserver
 	url = https://github.com/mpromonet/v4l2rtspserver
+[submodule "rtsp_viewer"]
+	path = rtsp-viewer
+	url = https://github.com/hyeonseo0128/rtsp_viewer.git

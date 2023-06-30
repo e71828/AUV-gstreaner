@@ -145,7 +145,7 @@ class Video():
 
 if __name__ == '__main__':
     # Create the video object
-    # Add port= if is necessary to use a different one
+    # Add port= if is necessary to use a differqent one
     video = Video()
 
     print('Initialising stream...')
@@ -171,3 +171,8 @@ if __name__ == '__main__':
             current_time = datetime.now().strftime('%Y%m%d-%H%M%S')
             file_name = 'Frame_{}.jpg'.format(current_time)
             cv2.imwrite(file_name, video.latest_frame)
+
+
+"""
+ssh-keygen -t ed25519 -C
+"""
